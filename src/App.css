@@ -1,0 +1,411 @@
+* {
+  /* background-image: url(./assets/bg.png); */
+  background-color: rgb(17, 0, 20);
+  color: white;
+}
+
+.header {
+  display: flex;
+  margin-top: 10px;
+}
+.home-btn {
+  background-color: transparent;
+  height: 40px;
+}
+.search {
+  height: 30px;
+  margin-top: 5px;
+  .search-input {
+    background-color: rgb(172, 33, 177);
+    border: none;
+  }
+}
+.right-header-section {
+  margin-left: auto;
+  margin-right: 25px;
+  order: 2;
+  justify-content: space-around;
+}
+.icon-right {
+  margin: 10px;
+}
+.icon {
+  margin: 5px 25px;
+}
+.content {
+  display: flex;
+  margin: 20px;
+}
+
+.left-section {
+  width: 20rem;
+}
+
+.mid-section {
+  width: 70%;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  margin: 30px;
+}
+
+/* Create post */
+.create-post-component {
+  margin: 20px;
+  margin-top: 0;
+  border: 1px solid rgb(163, 14, 212);
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.post-input {
+  margin-left: 10px;
+  width: 80%;
+}
+
+.post-control-buttons {
+  button {
+    margin: 10px;
+    border-color: purple;
+  }
+}
+
+.user-icon {
+  svg {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+}
+
+/* post component */
+
+.post-component {
+  margin: 20px;
+  margin-top: 0;
+  border: 1px solid rgb(163, 14, 212);
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.post-header {
+  padding-bottom: 15px;
+}
+
+.user-name {
+  margin-left: 10px;
+}
+
+.card-header {
+  padding: 10px;
+  margin: 5px;
+}
+
+.reaction-section {
+  display: flex;
+  margin: 10px;
+}
+
+.likes {
+  margin-left: 20px;
+}
+
+.comments {
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.post-action-buttons {
+  display: flex;
+  /* justify-content: center; */
+
+  justify-content: space-evenly;
+}
+
+.action-button {
+  margin: 10px;
+  border: 1px solid rgb(197, 17, 229);
+  border-radius: 10px;
+  width: 130px;
+  cursor: pointer;
+  padding: 3px;
+}
+
+.hastags {
+  text-align: left;
+  margin-left: 30px;
+  margin-top: 5px;
+  color: gray;
+}
+
+/* User profile component */
+
+.user-profile {
+  margin-bottom: 20px;
+  .card {
+    border-radius: 15px;
+    border-color: rgb(163, 14, 212);
+  }
+  .bg-img {
+    height: 100px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+  .profile-img {
+    position: absolute;
+    top: 80px;
+    left: 142px;
+    background: none;
+    svg {
+      border: 2px solid rgb(239, 243, 28);
+      border-radius: 50%;
+      width: 2.8rem;
+      height: 2.8rem;
+    }
+  }
+  .card-body {
+    border: 1px solid rgb(141, 8, 164);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    .user-name {
+      margin-top: 20px;
+    }
+    .profile-name {
+      font-size: 14px;
+      color: rgb(168, 23, 226);
+      margin-top: 5px;
+    }
+    .bio {
+      margin: 20px 10px;
+      color: gray;
+    }
+    .following,
+    .followers {
+      text-align: center;
+
+      .text {
+        font-weight: 300;
+        color: gray;
+      }
+    }
+    .full-profile {
+      margin-left: 40%;
+      text-decoration: none;
+    }
+  }
+
+  .vl {
+    border-left: 1px solid rgb(163, 14, 212);
+    height: 50px;
+  }
+
+  .follow-details {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+/* Followers Preview component */
+
+.followers {
+  margin-bottom: 20px;
+  .card {
+    border-color: rgb(163, 14, 212);
+    border-radius: 15px;
+  }
+  .card-body {
+    border-radius: 15px;
+    border: 1px solid rgb(163, 14, 212);
+  }
+
+  .follower {
+    margin-top: 25px;
+    margin-bottom: 4px;
+    display: flex;
+  }
+
+  .follower-name {
+    width: 60%;
+    padding-left: 20px;
+  }
+  span {
+    margin: 4px;
+  }
+  svg {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+
+  svg {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .see-more {
+    text-decoration: none;
+    margin-left: 70%;
+  }
+}
+
+/* For You Component  */
+
+.for-you {
+  .card {
+    border-radius: 15px;
+    border-color: rgb(163, 14, 212);
+  }
+  .card-body {
+    border-radius: 15px;
+    border: 1px solid rgb(163, 14, 212);
+  }
+  .header-you {
+    color: purple;
+    text-decoration: underline;
+  }
+  .follower-name {
+    margin-left: 5px;
+  }
+  .follower {
+    margin: 20px 5px;
+  }
+  .follow-btn {
+    margin-left: 10px;
+    background-color: transparent;
+    color: rgb(224, 211, 213);
+    border-color: purple;
+    padding: 1px 1px;
+  }
+  .follow-btn:hover {
+    background-color: purple;
+    border-color: black;
+  }
+}
+
+/* Popup Model */
+
+.model-popup {
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  z-index: 2;
+  border: 1px solid rgb(74, 6, 89);
+  height: 400px;
+  width: 500px;
+  box-shadow: -3px 2px 4px 1px rgb(73, 4, 157);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  input::-webkit-file-upload-button {
+    visibility: hidden;
+    color: transparent;
+  }
+  .header {
+    position: absolute;
+    top: 5px;
+    font-size: 24px;
+  }
+
+  .text-input {
+    width: 80%;
+    border: 1px solid purple;
+    margin-top: 10%;
+  }
+}
+
+.input-sec {
+  border: 1px solid rgb(87, 6, 174);
+  box-shadow: 3px -3px 9px 1px #54509d inset;
+  height: 100px;
+  margin: auto;
+  color: transparent;
+  position: absolute;
+  top: 15%;
+}
+.import-icon {
+  position: absolute;
+  top: 20%;
+  font-size: 32px;
+  color: blue;
+}
+.modal-footer {
+  position: absolute;
+  bottom: 50%;
+  left: 15%;
+  width: 50%;
+  z-index: 3;
+  background-color: transparent;
+  .save,
+  .close {
+    margin: 10px;
+    width: 100px;
+    border: 1px solid purple;
+    border-radius: 10px;
+  }
+}
+
+.login-header {
+  margin-top: 50px;
+  position: relative;
+  text-align: center;
+}
+.login-form {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  border: 1px solid rgb(142, 14, 197);
+  text-align: center;
+  box-shadow: -3px 4px 9px 1px rgb(95 37 65);
+
+  div {
+    padding: 20px 10px;
+  }
+
+  .login {
+    z-index: 2;
+  }
+
+  input {
+    border: 1px solid purple;
+    border-radius: 10px;
+    margin-left: 10px;
+    width: 60%;
+  }
+  input:focus-visible {
+    border: 1px solid rgb(15, 221, 77);
+  }
+}
+
+.register-form {
+  border: 1px solid purple;
+  width: 50%;
+  height: 600px;
+  margin: auto;
+  margin-top: 100px;
+  padding: 20px;
+
+  .reg-header {
+    text-align: center;
+  }
+  .form-text {
+    color: rgb(14, 201, 79);
+  }
+
+  input {
+    border: 1px solid purple;
+    border-radius: 10px;
+    margin-left: 10px;
+  }
+  .email-input {
+    width: 40%;
+    margin-right: 10px;
+  }
+  .username-input {
+    width: 25%;
+  }
+
+  .register-btn {
+    margin-left: 35%;
+  }
+}
